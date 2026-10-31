@@ -9,11 +9,11 @@ def classify_number(x: int | float) -> str:
     """
     if x < 0:   
         return "negative"
-    if x == 0:
+    elif x == 0:
         return "zero"
-    if 0 < x <= 10:
+    elif 0 < x <= 10:
         return "small"
-    if x > 10:
-        return "large"
-        
+    else :
+        return "large" 
+
     pass
